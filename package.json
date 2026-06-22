@@ -9,6 +9,7 @@
     "prisma": "prisma"
   },
   "dependencies": {
+    "@clerk/express": "^2.1.30",
     "@prisma/client": "^6.0.0",
     "bcrypt": "^6.0.0",
     "cors": "^2.8.5",

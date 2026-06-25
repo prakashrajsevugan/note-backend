@@ -6,6 +6,7 @@ const createNote = async (userId, data) => {
     data: {
       title: data.title,
       description: data.description,
+      imageUrl: data.imageUrl || null,
       userId: userId,
     },
   });
@@ -53,6 +54,7 @@ const updateNote = async (id, userId, data) => {
     data: {
       title: data.title,
       description: data.description,
+      imageUrl: data.imageUrl !== undefined ? data.imageUrl : note.imageUrl,
     },
   });
 };
